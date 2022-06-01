@@ -18,9 +18,9 @@ namespace WebApiProjectMUI_React.Controllers
         }
 
         [HttpGet]
-        IActionResult GetAllOrders()
+       public  IActionResult GetAllOrders()
         {
-            return Ok();
+            return Ok(oredrRepo.GetAllOrders());
         }
         [HttpPost]
         public IActionResult AddOrder(OrderDTO o)

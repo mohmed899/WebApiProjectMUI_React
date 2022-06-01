@@ -33,5 +33,10 @@ namespace WebApiProjectMUI_React.Repo
                 return -1;
             }
         }
+
+        public List<Order> GetAllOrders()
+        {
+            return db.order.ToList();
+        }
     }
 }
